@@ -1,0 +1,2 @@
+[console_scripts]
+wechat-format = wechat_format.cli:cli

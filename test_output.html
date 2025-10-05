@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>微信公众号文章</title>
+    
+<style>
+.markdown-body {
+    box-sizing: border-box;
+    min-width: 200px;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 45px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    word-wrap: break-word;
+    color: #333;
+}
+
+/* 标题样式 */
+.markdown-body h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 1.5em 0 1em 0;
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid #3498db;
+}
+
+.markdown-body h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #34495e;
+    margin: 1.3em 0 0.8em 0;
+    padding-left: 10px;
+    border-left: 4px solid #3498db;
+}
+
+.markdown-body h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 1.2em 0 0.6em 0;
+}
+
+.markdown-body h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #34495e;
+    margin: 1em 0 0.5em 0;
+}
+
+/* 段落样式 */
+.markdown-body p {
+    margin: 0.8em 0;
+    line-height: 1.8;
+}
+
+/* 强调样式 */
+.markdown-body strong {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.markdown-body em {
+    font-style: italic;
+    color: #8e44ad;
+}
+
+/* 链接样式 */
+.markdown-body a {
+    color: #3498db;
+    text-decoration: none;
+    border-bottom: 1px solid #3498db;
+}
+
+/* 列表样式 */
+.markdown-body ul, .markdown-body ol {
+    margin: 0.8em 0;
+    padding-left: 2em;
+}
+
+.markdown-body li {
+    margin: 0.3em 0;
+    line-height: 1.6;
+}
+
+/* 引用样式 */
+.markdown-body blockquote {
+    margin: 1em 0;
+    padding: 0.8em 1em;
+    background-color: #f8f9fa;
+    border-left: 4px solid #3498db;
+    color: #555;
+    font-style: italic;
+}
+
+/* 代码样式 */
+.markdown-body code {
+    background-color: #f1f2f6;
+    color: #e74c3c;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-size: 0.9em;
+}
+
+.markdown-body pre {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 1em;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin: 1em 0;
+}
+
+.markdown-body pre code {
+    background-color: transparent;
+    color: inherit;
+    padding: 0;
+}
+
+/* 表格样式 */
+.markdown-body table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+    font-size: 14px;
+}
+
+.markdown-body th, .markdown-body td {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+.markdown-body th {
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+}
+
+.markdown-body tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* 分割线样式 */
+.markdown-body hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #3498db, transparent);
+    margin: 2em 0;
+}
+
+/* 图片样式 */
+.markdown-body img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin: 1em 0;
+}
+
+/* 微信公众号特殊样式 */
+.wechat-highlight {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 0.2em 0.5em;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.wechat-box {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 1em;
+    margin: 1em 0;
+    position: relative;
+}
+
+.wechat-box::before {
+    content: "💡";
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    background-color: #fff;
+    padding: 0 5px;
+}
+</style>
+
+</head>
+<body>
+    <div class="markdown-body">
+        <h1>微信公众号格式化工具示例</h1>
+<h2>🎯 功能特色</h2>
+<p>这是一个<strong>强大</strong>的微信公众号格式化工具，支持：</p>
+<ul>
+<li>✅ Markdown 转 HTML</li>
+<li>✅ 一键复制到剪切板  </li>
+<li>✅ 微信公众号样式优化</li>
+<li>✅ 表格和代码块支持</li>
+</ul>
+<h2>📊 功能对比</h2>
+<table>
+<thead>
+<tr>
+<th>功能</th>
+<th>本工具</th>
+<th>其他工具</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Python 支持</td>
+<td>✅</td>
+<td>❌</td>
+</tr>
+<tr style="; background-color: #f8f9fa;">
+<td>命令行工具</td>
+<td>✅</td>
+<td>部分</td>
+</tr>
+<tr>
+<td>一键复制</td>
+<td>✅</td>
+<td>部分</td>
+</tr>
+<tr style="; background-color: #f8f9fa;">
+<td>样式优化</td>
+<td>✅</td>
+<td>一般</td>
+</tr>
+</tbody>
+</table>
+<h2>💻 代码示例</h2>
+<div class="codehilite">
+<pre style="background-color: #2c3e50; color: #ecf0f1; padding: 1em; border-radius: 5px; overflow-x: auto; margin: 1em 0;"><span></span><code style='background-color: transparent; color: inherit; font-family: "SFMono-Regular", Consolas, monospace;'><span class="kn">from</span><span class="w"> </span><span class="nn">wechat_format</span><span class="w"> </span><span class="kn">import</span> <span class="n">WeChatFormatter</span>
+
+<span class="n">formatter</span> <span class="o">=</span> <span class="n">WeChatFormatter</span><span class="p">()</span>
+<span class="n">html</span> <span class="o">=</span> <span class="n">formatter</span><span class="o">.</span><span class="n">convert_file</span><span class="p">(</span><span class="s1">'article.md'</span><span class="p">)</span>
+<span class="n">formatter</span><span class="o">.</span><span class="n">copy_to_clipboard</span><span class="p">(</span><span class="n">html</span><span class="p">)</span>
+</code></pre>
+</div>
+<h2>🔥 高亮文本</h2>
+<p><span class="wechat-highlight">这是高亮文本</span>，非常醒目！</p>
+<h2>📝 提示框</h2>
+<div class="wechat-box">这是一个提示框，用于重要信息提醒。</div>
+<h2>🌟 总结</h2>
+<p>使用本工具，让你的微信公众号文章更加<strong>专业</strong>和<strong>美观</strong>！</p>
+<hr/>
+<p><em>本示例展示了工具的主要功能，更多用法请参考文档。</em></p>
+
+    </div>
+</body>
+</html>

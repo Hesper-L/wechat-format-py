@@ -1,0 +1,137 @@
+Metadata-Version: 2.4
+Name: wechat-format-py
+Version: 0.1.0
+Summary: 一个基于 Python 的微信公众号 Markdown 格式化工具
+Home-page: https://github.com/yourusername/wechat-format-py
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: markdown2>=2.4.0
+Requires-Dist: mistune>=2.0.0
+Requires-Dist: flask>=2.0.0
+Requires-Dist: click>=8.0.0
+Requires-Dist: pyperclip>=1.8.0
+Requires-Dist: jinja2>=3.0.0
+Requires-Dist: beautifulsoup4>=4.9.0
+Requires-Dist: pygments>=2.10.0
+Requires-Dist: pywin32>=227; sys_platform == "win32"
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# WeChat Format Python
+
+一个基于 Python 的微信公众号 Markdown 格式化工具，支持命令行和 Web 界面两种使用方式。
+
+## ✨ 特性
+
+- 🐍 **Python 技术栈**：基于 Python 开发，易于扩展和维护
+- 📋 **一键复制**：自动将转换结果复制到剪切板
+- 🖥️ **命令行工具**：支持批量处理和脚本集成
+- 🌐 **Web 界面**：提供实时预览和在线编辑
+- 🎨 **样式优化**：专门针对微信公众号优化的样式
+- 📱 **移动适配**：确保在移动端完美显示
+
+## 🚀 快速开始
+
+### 安装
+
+```bash
+pip install wechat-format-py
+```
+
+### 命令行使用
+
+```bash
+# 转换单个文件并复制到剪切板
+wechat-format input.md
+
+# 转换文件并保存到指定位置
+wechat-format input.md -o output.html
+
+# 启动 Web 界面
+wechat-format --web
+```
+
+### Python 包使用
+
+```python
+from wechat_format import WeChatFormatter
+
+formatter = WeChatFormatter()
+
+# 转换 Markdown 文本
+html_content = formatter.convert("# 标题\n\n这是内容")
+
+# 转换文件
+html_content = formatter.convert_file("input.md")
+
+# 复制到剪切板
+formatter.copy_to_clipboard(html_content)
+```
+
+## 📦 项目结构
+
+```
+wechat-format-py/
+├── wechat_format/          # 主包
+│   ├── __init__.py
+│   ├── converter.py        # 核心转换器
+│   ├── styles.py          # 样式定义
+│   ├── cli.py             # 命令行接口
+│   └── web.py             # Web 界面
+├── templates/             # HTML 模板
+├── static/               # 静态资源
+├── tests/                # 测试文件
+├── examples/             # 示例文件
+├── requirements.txt      # 依赖列表
+├── setup.py             # 安装脚本
+└── README.md            # 项目说明
+```
+
+## 🛠️ 技术栈
+
+- **核心**：Python 3.7+
+- **Markdown 解析**：markdown2 / mistune
+- **Web 框架**：Flask
+- **剪切板操作**：pyperclip
+- **命令行**：click
+- **样式处理**：Jinja2
+
+## 📋 开发计划
+
+- [x] 项目结构设计
+- [ ] 核心转换器开发
+- [ ] 命令行接口实现
+- [ ] Web 界面开发
+- [ ] 样式优化和测试
+- [ ] 包发布和文档完善
+
+## 🤝 贡献
+
+欢迎提交 Issue 和 Pull Request！
+
+## 📄 许可证
+
+MIT License
+
+---
+
+基于 [lyricat/wechat-format](https://github.com/lyricat/wechat-format) 的 Python 实现版本。
