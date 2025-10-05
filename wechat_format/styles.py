@@ -62,7 +62,7 @@ BASE_STYLE = """
 /* 强调样式 */
 .markdown-body strong {
     font-weight: bold;
-    color: #e74c3c;
+    color: #1e3a8a;
 }
 
 .markdown-body em {
@@ -101,7 +101,7 @@ BASE_STYLE = """
 /* 代码样式 */
 .markdown-body code {
     background-color: #f1f2f6;
-    color: #e74c3c;
+    color: #1e3a8a;
     padding: 2px 4px;
     border-radius: 3px;
     font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
@@ -218,9 +218,9 @@ WECHAT_INLINE_STYLE = {
     'h3': 'font-size: 18px; font-weight: bold; color: #2c3e50; margin: 1.2em 0 0.6em 0;',
     'h4': 'font-size: 16px; font-weight: bold; color: #34495e; margin: 1em 0 0.5em 0;',
     'p': 'margin: 0.8em 0; line-height: 1.8; font-size: 16px; color: #333;',
-    'strong': 'font-weight: bold; color: #e74c3c;',
+    'strong': 'font-weight: bold; color: #1e3a8a;',
     'em': 'font-style: italic; color: #8e44ad;',
-    'code': 'background-color: #f1f2f6; color: #e74c3c; padding: 2px 4px; border-radius: 3px; font-family: monospace; font-size: 0.9em;',
+    'code': 'background-color: #f1f2f6; color: #1e3a8a; padding: 2px 4px; border-radius: 3px; font-family: monospace; font-size: 0.9em;',
     'blockquote': 'margin: 1em 0; padding: 0.8em 1em; background-color: #f8f9fa; border-left: 4px solid #3498db; color: #555; font-style: italic;',
     'ul': 'margin: 0.8em 0; padding-left: 2em;',
     'ol': 'margin: 0.8em 0; padding-left: 2em;',

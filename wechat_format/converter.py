@@ -106,6 +106,10 @@ class WeChatFormatter:
             CF_HTML = win32clipboard.RegisterClipboardFormat("HTML Format")
             
             # 准备HTML格式的剪切板数据
+            # 为了修复微信公众号复制格式问题，需要确保HTML结构紧凑
+            # 移除不必要的换行符，防止内容被拆分成单独行
+            cleaned_html = html_content.replace('\n', '').replace('\r', '')
+            
             html_format = f"""Version:0.9
 StartHTML:0000000000
 EndHTML:0000000000
@@ -115,11 +119,12 @@ EndFragment:0000000000
 <html>
 <head>
 <meta charset="utf-8">
+<style>
+body {{ margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif; }}
+</style>
 </head>
 <body>
-<!--StartFragment-->
-{html_content}
-<!--EndFragment-->
+<!--StartFragment-->{cleaned_html}<!--EndFragment-->
 </body>
 </html>"""
             

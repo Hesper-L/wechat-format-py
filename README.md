@@ -17,7 +17,7 @@
 
 ```bash
 # 克隆项目
-git clone <repository-url>
+git clone https://github.com/Hesper-L/wechat-format-py.git
 cd wechat-format-py
 
 # 安装依赖
