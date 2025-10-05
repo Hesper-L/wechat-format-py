@@ -1,7 +1,7 @@
 # WeChat Format Python
 
 一个基于 Python 的微信公众号 Markdown 格式化工具，支持命令行和 Web 界面两种使用方式。
-
+![image.png](outlook.png)
 ## ✨ 特性
 
 - 🐍 **Python 技术栈**：基于 Python 开发，易于扩展和维护
